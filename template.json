@@ -11,13 +11,18 @@
 		"source_ami": "ami-0de53d8956e8dcf80",
 		"instance_type": "t2.micro",
 		"ssh_username": "ec2-user",
-		"ami_name": "alopsing",
+		"ami_name": "bg-nginx-1.14.1-04282019",
 		"ami_description": "Amazon Base linux image",
 		"tags": {
-			"username": "alopsing"
+			"username": "alopsing",
+			"proxy_server": "nginx",
+			"version": "1.14.1"
 		},
 		"run_tags": {
-			"role": "alopsing"
+			"role": "bluegreen",
+			"author": "alopsing",
+			"proxy_server": "nginx",
+			"version": "1.14.1"
 		}
 	}],
 	"provisioners": [{
